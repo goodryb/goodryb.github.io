@@ -2,44 +2,40 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <%
-  var title = page.title;
-
-  if (is_archive()){
-    title = 'Archives';
-
-    if (is_month()){
-      title += ': ' + page.year + '/' + page.month;
-    } else if (is_year()){
-      title += ': ' + page.year;
-    }
-  } else if (is_category()){
-    title = 'Category: ' + page.category;
-  } else if (is_tag()){
-    title = 'Tag: ' + page.tag;
-  }
-  %>
+  
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <link rel="dns-prefetch" href="<%= config.url %>">
-  <title><% if (title){ %><%= title %> | <% } %><%= config.title %></title>
+  <link rel="dns-prefetch" href="https://goodryb.top">
+  <title>hexo写作 | GoodRYB的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <%- open_graph({twitter_id: theme.twitter, google_plus: theme.google_plus, fb_admins: theme.fb_admins, fb_app_id: theme.fb_app_id}) %>
-  <% if (theme.rss){ %>
-    <link rel="alternative" href="<%- theme.rss %>" title="<%= config.title %>" type="application/atom+xml">
-  <% } %>
-  <% if (theme.favicon){ %>
-    <link rel="icon" href="<%- theme.favicon %>">
-  <% } %>
-  <%- partial('css') %>
+  <meta name="description" content="Hexo 默认以标题做为文件名称，但您可编辑 new_post_name 参数来改变默认的文件名称，举例来说，设为 :year-:month-:day-:title.md 可让您更方便的通过日期来管理文章 123&amp;lt;iframe width=&quot;854&quot; height=&quot;480&quot; src=&quot;https://www.youtube.com/embed/OpEFIa5oHic&quot; frameborde">
+<meta name="keywords" content="记录">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hexo写作">
+<meta property="og:url" content="https://goodryb.top/2017/11/08/hexo写作/index.html">
+<meta property="og:site_name" content="GoodRYB的博客">
+<meta property="og:description" content="Hexo 默认以标题做为文件名称，但您可编辑 new_post_name 参数来改变默认的文件名称，举例来说，设为 :year-:month-:day-:title.md 可让您更方便的通过日期来管理文章 123&amp;lt;iframe width=&quot;854&quot; height=&quot;480&quot; src=&quot;https://www.youtube.com/embed/OpEFIa5oHic&quot; frameborde">
+<meta property="og:updated_time" content="2017-11-09T03:43:07.136Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="hexo写作">
+<meta name="twitter:description" content="Hexo 默认以标题做为文件名称，但您可编辑 new_post_name 参数来改变默认的文件名称，举例来说，设为 :year-:month-:day-:title.md 可让您更方便的通过日期来管理文章 123&amp;lt;iframe width=&quot;854&quot; height=&quot;480&quot; src=&quot;https://www.youtube.com/embed/OpEFIa5oHic&quot; frameborde">
+  
+    <link rel="alternative" href="/atom.xml" title="GoodRYB的博客" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <link rel="stylesheet" type="text/css" href="/./main.507b3a.css">
   <style type="text/css">
-  <% var defaultCtnBg = 'linear-gradient(200deg,#a0cfe4,#e8c37e)' %>
+  
     #container.show {
-      background: <%= theme.style && theme.style.slider ? theme.style.slider : defaultCtnBg %>;
+      background: linear-gradient(200deg,#a0cfe4,#e8c37e);
     }
   </style>
-  <%- partial('google-analytics') %>
-  <%- partial('baidu-analytics') %>
+  
+
+  
+
 </head>
 
 <body>
@@ -280,7 +276,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://blog.goodryb.top/2017/11/08/hexo写作/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=https://goodryb.top/2017/11/08/hexo写作/" alt="微信分享二维码">
     </div>
 </div>
 
